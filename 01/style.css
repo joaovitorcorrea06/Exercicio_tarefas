@@ -1,0 +1,16 @@
+div {
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightcyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: beige;
+}
+
+ol li{
+    text-align: left;
+}
