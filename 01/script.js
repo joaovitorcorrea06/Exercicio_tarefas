@@ -1,13 +1,15 @@
 var botaoAdicionar = document.getElementById ('adicionar');
 var inputTarefa = document.getElementById('tarefa');
+var botaoExcluir = document.getElementById ('excluir')
 
 inputTarefa.onkeypress = function(evento){
-    if (evento.key === 'enter'){
+    if (evento.key === 'Enter'){
         adicionar();
     }
 };
 
 botaoAdicionar.addEventListener('click', adicionar);
+
     
     function adicionar() {
             var tarefa = inputTarefa.value;
@@ -22,6 +24,11 @@ botaoAdicionar.addEventListener('click', adicionar);
                 };
                 li.ondblclick = function(){
                     li.style.color= 'red';
+                };
+
+                var botaoExcluir = document.createElement ('Button')
+                botaoExcluir.onclick = function (){ 
+                    li.appendChild (botaoExcluir)
                 };
 
                 var ol = document.getElementById ('tarefas');
